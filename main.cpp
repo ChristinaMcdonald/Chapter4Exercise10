@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <iomanip>
-#include <cmath>
 using namespace std;
 
 int main() {
@@ -21,10 +20,15 @@ cin >> month;
 if (month == 1|| month == 3|| month == 5|| month == 7|| month == 8 || month == 10 || month == 12) {
     cout << "There are 31 days" << endl;
 }
+else if (month == 4 || month == 6 || month == 9 || month == 11) {
+    cout << "There are 30 days" << endl;
+}
 else if (month == 2 ) {
     cout << "What is the year?" << endl;
     cin >> year;
-
+        if ( year % 100 == 0 && year % 4 == 0)
+            {cout << "There are 29 days";}
+        else { cout << "There are 28 days";}
 
 }
 
