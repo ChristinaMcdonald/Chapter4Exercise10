@@ -26,7 +26,7 @@ else if (month == 4 || month == 6 || month == 9 || month == 11) {
 else if (month == 2 ) {
     cout << "What is the year?" << endl;
     cin >> year;
-        if ( year % 100 == 0 && year % 4 == 0)
+        if ( year % 100 == 0 || year % 4 == 0)
             {cout << "There are 29 days";}
         else { cout << "There are 28 days";}
 
